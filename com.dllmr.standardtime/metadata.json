@@ -1,0 +1,28 @@
+{
+    "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Mike Dillamore"
+            }
+        ],
+        "Category": "",
+        "Description": "Wallpaper plugin to play Standard Time video, synced to PC clock - see https://www.standard-time.com/",
+        "Icon": "preferences-desktop-wallpaper",
+        "Id": "com.dllmr.standardtime",
+        "License": "GPLv2+",
+        "Version": "0.1.0",
+        "Name": "Standard Time",
+        "Website": "https://github.com/dllmr/plasma-wallpaper-standardtime",
+        "BugReportUrl": "https://github.com/dllmr/plasma-wallpaper-standardtime/issues"
+    },
+    "Keywords": [
+        "video",
+        "wallpaper",
+        "lockscreen",
+        "standardtime"
+    ],
+    "X-KDE-ParentApp": "org.kde.plasmashell",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-PluginType": "lockscreen"
+}
