@@ -18,7 +18,7 @@ Locate the **Standard Time** video file from your purchase. This should be named
 
 Copy this file into the directory `~/.local/share/plasma/wallpapers/com.dllmr.standardtime/contents/ui`.
 
-You should now be able to configure your Plasma 6 system to use the Standard Time video as your lock screen.
+You should now be able to configure your Plasma 6 system to use the **Standard Time** video as your lock screen.
 
 ## Alternatives
 
