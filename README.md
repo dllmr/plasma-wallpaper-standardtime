@@ -24,4 +24,4 @@ You should now be able to configure your Plasma 6 system to use the **Standard T
 
 The code of this plugin has been deliberately engineered to be as minimal as possible. E.g., there are no configuration options at all.
 
-For a much more comprehensive video wallpaper plugin for Plasma 6, please visit https://github.com/luisbocanegra/plasma-smart-video-wallpaper-reborn. This plugin has many more features, although lacks the clock sync feature which is essential for operation of **Standard Time**.
+For a much more comprehensive video wallpaper plugin for Plasma 6, please visit https://github.com/luisbocanegra/plasma-smart-video-wallpaper-reborn. This plugin has many more features, although lacks the clock sync ability which is essential for operation of **Standard Time**.
