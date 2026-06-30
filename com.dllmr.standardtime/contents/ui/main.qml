@@ -19,16 +19,38 @@
 import QtQuick
 import QtMultimedia
 import org.kde.plasma.plasmoid
+import org.kde.plasma.core as PlasmaCore
 
 WallpaperItem {
+
+    // Name of the 24-hour Standard Time video, expected alongside this file.
+    readonly property string videoFileName: "st24.mov"
 
     Video {
         id: player
         anchors.fill: parent
-        source: Qt.resolvedUrl("./st24.mov")
+        source: Qt.resolvedUrl("./" + videoFileName)
         loops: MediaPlayer.Infinite
         fillMode: VideoOutput.PreserveAspectFit
         volume: 0.0
+
+        // A missing or unreadable video surfaces here as a resource error.
+        onErrorOccurred: (error, errorString) => {
+            errorMessage.visible = true
+        }
+    }
+
+    Text {
+        id: errorMessage
+        visible: false
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: Math.round(parent.height * 0.08)
+        horizontalAlignment: Text.AlignHCenter
+        color: "white"
+        font: PlasmaCore.Theme.defaultFont
+        text: "The Standard Time video (" + videoFileName + ") could not be loaded.\n"
+              + "Please ensure it is installed alongside this wallpaper."
     }
 
     function getMillisecondsSinceMidnight() {
